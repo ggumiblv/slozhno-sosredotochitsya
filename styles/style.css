@@ -6,6 +6,7 @@
   min-width: 375px;
   box-sizing: border-box;
   overflow: auto;
+  background-attachment: fixed;
 }
 
 .header__theme-menu {
@@ -28,7 +29,6 @@
   color: var(--button-color);
   font-family: IBM Plex Mono;
   font-size: 18px;
-  border: none;
   background-color: transparent;
   border: 1px solid transparent;
   border-width: 0 7px;
@@ -291,7 +291,7 @@
 
   .decorated-zone {
     display: grid;
-    grid-template-rows: 329px 292px 120px;
+    grid-template-rows: 329px 292px 140px;
     gap: 40px;
   }
 
@@ -312,10 +312,6 @@
 
   .main {
     margin: 0 20px 0 20px;
-  }
-
-  .title-simple-gap {
-    margin: 0 0 0 0;
   }
 
   .title-decor {
