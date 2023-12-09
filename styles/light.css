@@ -3,10 +3,92 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+:root .theme_light {
+  --button-color: #353430;
+  --decor-color: #353430;
+  --accent-color: #ff8dcb;
+  --bg-color: #ffeef6;
+  --text-color: #353430;
+  --h-color: #ffc2e6;
+  --accent-text-color: #353430;
+  --non-decor-text: #353430;
+  --hover-color: rgba(50, 49, 45, 0.4);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --button-color: #353430;
+    --decor-color: #353430;
+    --accent-color: #ff8dcb;
+    --bg-color: #ffeef6;
+    --text-color: #353430;
+    --h-color: #ffc2e6;
+    --accent-text-color: #353430;
+    --non-decor-text: #353430;
+    --hover-color: rgba(50, 49, 45, 0.4);
+  }
+  .theme_light .decoration {
+    visibility: hidden;
+  }
+}
 
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  background-image: url(../images/cover-image-light.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: var(--bg-color);
+}
+
+@media (prefers-color-scheme: light) {
+  .theme_light .decoration {
+    visibility: hidden;
+  }
+}
+
+.header_about {
+  color: var(--h-color);
+}
+
+.title-decor {
+  color: var(--accent-text-color);
+}
+
+.title-none-decor {
+  color: var(--non-decor-text);
+}
+
+.content-text {
+  color: var(--text-color);
+}
+
+.header::before {
+  border-top: 1px solid var(--decor-color);
+  border-right: 1px solid var(--decor-color);
+}
+
+.header::after {
+  border-bottom: 1px solid var(--decor-color);
+  border-left: 1px solid var(--decor-color);
+}
+
+.footer::before {
+  border-top: 1px solid var(--decor-color);
+  border-right: 1px solid var(--decor-color);
+}
+
+.footer::after {
+  border-bottom: 1px solid var(--decor-color);
+  border-left: 1px solid var(--decor-color);
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--hover-color);
+}
+.header__theme-menu-button:focus {
+  border-bottom: 1px solid var(--button-color);
 }
