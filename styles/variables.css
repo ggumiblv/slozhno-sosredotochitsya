@@ -15,4 +15,7 @@
   --h-color: #db00ff;
   --hover-color: rgba(255, 0, 112, 0.4);
   --side-padding: 10px;
+  --font-family_page: "IBM Plex Mono", serif, monospace;
+  --common-header-shadow-color: #ff0070;
+  --bg-image: url(../images/cover-image-dark.png);
 }

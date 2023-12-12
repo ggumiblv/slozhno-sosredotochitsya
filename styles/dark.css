@@ -15,6 +15,9 @@
   --h-color: #db00ff;
   --hover-color: rgba(255, 0, 112, 0.4);
   --side-padding: 10px;
+  --font-family_page: "IBM Plex Mono", serif, monospace;
+  --common-header-shadow-color: #ff0070;
+  --bg-image: url(../images/cover-image-dark.png);
 }
 
 .page.theme_dark {
@@ -22,10 +25,10 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-
-  background-image: url(../images/cover-image-dark.png);
-  background-size: auto;
+  background-image: var(--bg-image);
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: 100%;
   background-color: var(--bg-color);
 }
