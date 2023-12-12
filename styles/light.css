@@ -14,7 +14,7 @@
   --non-decor-text: #353430;
   --hover-color: rgba(50, 49, 45, 0.4);
   --common-header-shadow-color: #ff0070;
-  --bg-image: url(../images/cover-image-light.png)
+  --bg-image: url(../images/cover-image-light.png);
 }
 
 @media (prefers-color-scheme: light) {
@@ -54,7 +54,7 @@
     visibility: hidden;
   }
 }
- 
+
 .header_about {
   color: var(--h-color);
 }
