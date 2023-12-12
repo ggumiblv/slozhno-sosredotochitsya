@@ -64,7 +64,7 @@
 
 .header {
   position: relative;
-  margin: 0 0 42px 0;
+  margin: 0 0 40px 0;
   display: grid;
   grid-template-rows: 190px 216px 117px;
   gap: 40px;
@@ -160,7 +160,7 @@
 .title-decor {
   color: var(--bg-color);
   background-color: var(--accent-color);
-  margin: 0 0 11px 0;
+  margin: 0 0 10px 0;
 }
 
 .title-none-decor {
@@ -173,7 +173,7 @@
 }
 
 .content-part-columns {
-  margin: 0 0 51px 0;
+  margin: 0 0 50px 0;
 }
 
 .content-text {
