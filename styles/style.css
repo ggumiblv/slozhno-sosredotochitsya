@@ -285,7 +285,7 @@
     grid-template-columns: 32% 64%;
     gap: 10px;
     justify-content: space-between;
-    margin: 0px 0 62px 0;
+    margin: 0px 0 64px 0;
   }
 
   .content-part-columns-list {
@@ -403,7 +403,7 @@
   .content-part-rows {
     gap: 20px;
     grid-template-columns: 32% 66%;
-    margin: 0 0 60px 0;
+    margin: 0 0 63px 0;
   }
 
   .content-part-columns {
