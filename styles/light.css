@@ -22,8 +22,8 @@
   --hidden-element: hidden;
 }
 
-@media (prefers-color-scheme: light) { 
-  :root { 
+@media (prefers-color-scheme: light) {
+  :root {
     --button-color: #353430;
     --decor-color: #353430;
     --accent-color: #ff8dcb;
@@ -36,7 +36,7 @@
     --common-header-shadow-color: #ff0070;
     --bg-image: url(../images/cover-image-light.png);
     --hidden-element: hidden;
-  } 
+  }
 }
 
 @media (prefers-color-scheme: light) {
