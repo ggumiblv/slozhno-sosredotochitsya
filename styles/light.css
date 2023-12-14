@@ -3,7 +3,11 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root .theme_light {
+.page.theme_light {
+  /* сохраните этот селектор в приведённом виде.
+    Так стили написанные ниже будут иметь больший вес,
+    чем стили в медиазапросе предпочтений пользователя
+  */
   --button-color: #353430;
   --decor-color: #353430;
   --accent-color: #ff8dcb;
@@ -15,10 +19,11 @@
   --hover-color: rgba(50, 49, 45, 0.4);
   --common-header-shadow-color: #ff0070;
   --bg-image: url(../images/cover-image-light.png);
+  --hidden-element: hidden;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
+@media (prefers-color-scheme: light) { 
+  :root { 
     --button-color: #353430;
     --decor-color: #353430;
     --accent-color: #ff8dcb;
@@ -30,67 +35,12 @@
     --hover-color: rgba(50, 49, 45, 0.4);
     --common-header-shadow-color: #ff0070;
     --bg-image: url(../images/cover-image-light.png);
-  }
-  .theme_light .decoration {
-    visibility: hidden;
-  }
-}
-
-.page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-  background-image: var(--bg-image);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 100%;
-  background-color: var(--bg-color);
+    --hidden-element: hidden;
+  } 
 }
 
 @media (prefers-color-scheme: light) {
-  .theme_light .decoration {
+  .theme_auto .decoration {
     visibility: hidden;
   }
-}
-
-.header_about {
-  color: var(--h-color);
-}
-
-.title-decor {
-  color: var(--accent-text-color);
-}
-
-.title-none-decor {
-  color: var(--non-decor-text);
-}
-
-.content-text {
-  color: var(--text-color);
-}
-
-.header::before {
-  border-top: 1px solid var(--decor-color);
-  border-right: 1px solid var(--decor-color);
-}
-
-.header::after {
-  border-bottom: 1px solid var(--decor-color);
-  border-left: 1px solid var(--decor-color);
-}
-
-.footer::before {
-  border-top: 1px solid var(--decor-color);
-  border-right: 1px solid var(--decor-color);
-}
-
-.footer::after {
-  border-bottom: 1px solid var(--decor-color);
-  border-left: 1px solid var(--decor-color);
-}
-
-.header__theme-menu-button:hover {
-  border: 1px solid var(--hover-color);
 }
