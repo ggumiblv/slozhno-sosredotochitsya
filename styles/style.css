@@ -289,7 +289,7 @@
   }
 
   .content-part-columns-list {
-    margin: 0 0 81px 6px;
+    margin: 0 0 83px 6px;
   }
 
   .title-fix-box {
@@ -403,7 +403,7 @@
   .content-part-rows {
     gap: 20px;
     grid-template-columns: 32% 66%;
-    margin: 0 0 58px 0;
+    margin: 0 0 60px 0;
   }
 
   .content-part-columns {
