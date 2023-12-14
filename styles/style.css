@@ -61,12 +61,12 @@
   margin: 0 0 40px 0;
   grid-template-rows: 190px 216px 117px;
   gap: 40px;
+  display: grid;
 }
 
 .common-styles {
   height: 100vh;
   position: relative;
-  display: grid;
 }
 
 .decorated-zone::before {
@@ -217,6 +217,7 @@
 }
 
 .footer {
+  display: grid;
   margin: 30px 0 0 0;
 }
 

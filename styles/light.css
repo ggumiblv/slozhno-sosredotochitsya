@@ -38,9 +38,3 @@
     --hidden-element: hidden;
   }
 }
-
-@media (prefers-color-scheme: light) {
-  .theme_auto .decoration {
-    visibility: hidden;
-  }
-}
